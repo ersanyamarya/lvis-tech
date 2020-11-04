@@ -1,15 +1,15 @@
 import { graphql, useStaticQuery } from 'gatsby'
-import { Why } from './index'
+import { Service } from './index'
 import { Query } from '../types/generated'
 
-export function useWhys(): Why[] {
+export function useMissionVision(): Service[] {
   const data: Query = useStaticQuery(graphql`
     query {
-      allContentfulWhy(sort: { order: ASC, fields: createdAt }) {
+      allContentfulMissionVision(sort: { order: ASC, fields: index }) {
         nodes {
-          id
+          title
           slug
-          name
+          id
           description
           featuredImage {
             fluid {
@@ -27,11 +27,13 @@ export function useWhys(): Why[] {
     }
   `)
 
-  return data.allContentfulWhy.nodes.map(node => {
+  return data.allContentfulMissionVision.nodes.map((node, index) => {
+    console.log(node.title)
+
     return {
       id: node.id,
       featuredImage: node.featuredImage.fluid,
-      name: node.name,
+      title: node.title,
       slug: node.slug,
       description: node.description,
     }

@@ -1,9 +1,5 @@
-import { usePosts } from './use-posts'
 import { useServices } from './use-services'
-import { useWhys } from './use-whys'
-import { useFaqs } from './use-faqs'
-import { usePhysiotherapists } from './use-physiotherapist'
-import { useTestimonials } from './use-testimonials'
+import { useMissionVision } from './use-mission-vision'
 import { useAsset } from './use-asset'
 interface User {
   email: string
@@ -31,16 +27,10 @@ interface Post {
 
 interface Service {
   id: string
-  name: string
+  title: string
   slug: string
   description?: string
   featuredImage?: any
-  body1?: any
-  body2?: any
-  heroImage?: any
-  expand?: boolean
-  backgroundColor?: string
-  color?: string
 }
 
 interface StaticPage {
@@ -92,5 +82,5 @@ interface File {
   id: string
   title: string
 }
-export { usePosts, useServices, useWhys, useFaqs, usePhysiotherapists, useTestimonials, useAsset }
+export { useServices, useAsset, useMissionVision }
 export type { Post, User, Service, StaticPage, Why, Faq, Physiotherapist, File, Testimonial }

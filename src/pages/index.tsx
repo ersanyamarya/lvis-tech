@@ -2,7 +2,7 @@ import React from 'react'
 import tw, { styled } from 'twin.macro'
 import Image from 'gatsby-image'
 import scrollTo from 'gatsby-plugin-smoothscroll'
-import { Layout, Services, Why, Process, Faq, ContactUs, Booking, Testimonials } from '../components'
+import { Layout, Services, Why, MissionVison, Faq, ContactUs, Booking, Testimonials } from '../components'
 import colors from '../components/colors'
 import { useAsset } from '../hooks'
 import { BigButtonWhite, BigButtonYellowShadow } from '../components/common'
@@ -59,6 +59,7 @@ export default function Home(): JSX.Element {
           </div>
         </HeroContent>
       </div>
+      <MissionVison />
       {/* <Process />
       <Why />
       <Testimonials />

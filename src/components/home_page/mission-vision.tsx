@@ -40,7 +40,7 @@ export default function MissionVison(): JSX.Element {
             rx="13.7166"
             fill="white"
             stroke="#603973"
-            stroke-width="3.42914"
+            strokeWidth="3.42914"
           />
           <rect
             x="2.00024"
@@ -50,7 +50,7 @@ export default function MissionVison(): JSX.Element {
             rx="13.7166"
             fill="#F6F1FD"
             stroke="#603973"
-            stroke-width="3.42914"
+            strokeWidth="3.42914"
           />
           <rect
             x="43.8352"
@@ -60,120 +60,120 @@ export default function MissionVison(): JSX.Element {
             rx="8.57286"
             fill="#FFF4A4"
             stroke="#603973"
-            stroke-width="3.42914"
+            strokeWidth="3.42914"
           />
           <rect x="63.2932" y="63.2928" width="18.4852" height="18.4852" rx="1.71457" fill="#603973" />
           <path
             d="M37.0247 59.4012H43.835"
             stroke="#603973"
-            stroke-width="3.42914"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="3.42914"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
           <path
             d="M37.0247 68.1573H43.835"
             stroke="#603973"
-            stroke-width="3.42914"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="3.42914"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
           <path
             d="M37.0247 76.9135H43.835"
             stroke="#603973"
-            stroke-width="3.42914"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="3.42914"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
           <path
             d="M37.0247 85.6696H43.835"
             stroke="#603973"
-            stroke-width="3.42914"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="3.42914"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
           <path
             d="M101.236 59.4012H108.047"
             stroke="#603973"
-            stroke-width="3.42914"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="3.42914"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
           <path
             d="M101.236 68.1573H108.047"
             stroke="#603973"
-            stroke-width="3.42914"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="3.42914"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
           <path
             d="M101.236 76.9135H108.047"
             stroke="#603973"
-            stroke-width="3.42914"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="3.42914"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
           <path
             d="M101.236 85.6696H108.047"
             stroke="#603973"
-            stroke-width="3.42914"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="3.42914"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
           <path
             d="M59.4014 108.046L59.4014 101.236"
             stroke="#603973"
-            stroke-width="3.42914"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="3.42914"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
           <path
             d="M68.1575 108.046L68.1575 101.236"
             stroke="#603973"
-            stroke-width="3.42914"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="3.42914"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
           <path
             d="M76.9136 108.046L76.9136 101.236"
             stroke="#603973"
-            stroke-width="3.42914"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="3.42914"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
           <path
             d="M85.6697 108.046L85.6697 101.236"
             stroke="#603973"
-            stroke-width="3.42914"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="3.42914"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
           <path
             d="M59.4014 43.8348L59.4014 37.0245"
             stroke="#603973"
-            stroke-width="3.42914"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="3.42914"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
           <path
             d="M68.1575 43.8348L68.1575 37.0245"
             stroke="#603973"
-            stroke-width="3.42914"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="3.42914"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
           <path
             d="M76.9136 43.8348L76.9136 37.0245"
             stroke="#603973"
-            stroke-width="3.42914"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="3.42914"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
           <path
             d="M85.6697 43.8348L85.6697 37.0245"
             stroke="#603973"
-            stroke-width="3.42914"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="3.42914"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
           <circle cx="54.5371" cy="55.5096" r="1.94581" fill="#603973" />
           <circle cx="54.5371" cy="91.5071" r="1.94581" fill="#603973" />
@@ -196,7 +196,7 @@ export default function MissionVison(): JSX.Element {
             rx="13.7166"
             fill="white"
             stroke="#603973"
-            stroke-width="3.42914"
+            strokeWidth="3.42914"
           />
           <rect
             x="2"
@@ -206,7 +206,7 @@ export default function MissionVison(): JSX.Element {
             rx="13.7166"
             fill="white"
             stroke="#603973"
-            stroke-width="3.42914"
+            strokeWidth="3.42914"
           />
           <rect
             x="13.625"
@@ -216,7 +216,7 @@ export default function MissionVison(): JSX.Element {
             rx="10.2874"
             fill="#E8DBFB"
             stroke="#603973"
-            stroke-width="3.42914"
+            strokeWidth="3.42914"
           />
           <rect
             x="13.625"
@@ -226,42 +226,42 @@ export default function MissionVison(): JSX.Element {
             rx="10.2874"
             fill="#FFF4A4"
             stroke="#603973"
-            stroke-width="3.42914"
+            strokeWidth="3.42914"
           />
           <path
             d="M120.063 42.0603C120.17 41.2022 120.9 40.5583 121.764 40.5583H133.045C133.91 40.5583 134.639 41.2022 134.746 42.0603L137 60.0926C137.128 61.1159 136.33 62.0198 135.299 62.0198H119.51C118.479 62.0198 117.681 61.1159 117.809 60.0926L120.063 42.0603Z"
             stroke="#603973"
-            stroke-width="3.42914"
+            strokeWidth="3.42914"
           />
           <path
             d="M119.197 121.289C119.288 122.163 120.024 122.827 120.903 122.827L132.118 122.827C132.996 122.827 133.733 122.163 133.823 121.289L136.151 98.7855C136.256 97.7742 135.462 96.8945 134.446 96.8945L118.575 96.8945C117.558 96.8945 116.765 97.7742 116.869 98.7855L119.197 121.289Z"
             stroke="#603973"
-            stroke-width="3.42914"
+            strokeWidth="3.42914"
           />
           <path
             d="M158.813 58.3883C159.606 58.0684 160.513 58.3809 160.94 59.121L166.604 68.9309C167.031 69.671 166.848 70.6127 166.175 71.139L153.746 80.8549C152.925 81.4967 151.726 81.2638 151.205 80.3614L143.342 66.7413C142.821 65.8388 143.218 64.6842 144.185 64.2941L158.813 58.3883Z"
             stroke="#603973"
-            stroke-width="3.42914"
+            strokeWidth="3.42914"
           />
           <path
             d="M86.3772 68.6091C85.6914 68.0862 85.5007 67.1352 85.9319 66.3883L91.5774 56.61C92.0086 55.8631 92.9275 55.5528 93.7233 55.8853L109.953 62.6668C110.907 63.0654 111.294 64.2109 110.777 65.1061L102.89 78.7677C102.373 79.6629 101.187 79.9006 100.365 79.2739L86.3772 68.6091Z"
             stroke="#603973"
-            stroke-width="3.42914"
+            strokeWidth="3.42914"
           />
           <path
             d="M164.373 93.4151C165.053 93.9395 165.24 94.8864 164.811 95.6304L159.157 105.422C158.728 106.166 157.814 106.478 157.02 106.151L141.523 99.7712C140.564 99.3763 140.172 98.2268 140.691 97.3284L148.568 83.6849C149.087 82.7865 150.278 82.5509 151.099 83.1842L164.373 93.4151Z"
             stroke="#603973"
-            stroke-width="3.42914"
+            strokeWidth="3.42914"
           />
           <path
             d="M93.7523 105.66C92.9579 105.988 92.0439 105.676 91.6144 104.932L85.9612 95.1409C85.5317 94.3969 85.7191 93.4498 86.3997 92.9254L99.7038 82.6757C100.525 82.0428 101.716 82.2785 102.235 83.1767L110.113 96.8211C110.631 97.7193 110.24 98.8686 109.281 99.2637L93.7523 105.66Z"
             stroke="#603973"
-            stroke-width="3.42914"
+            strokeWidth="3.42914"
           />
           <circle cx="127.639" cy="83.0342" r="33.5336" fill="#603973" />
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M116.98 43.562C117.194 41.846 118.653 40.5582 120.383 40.5582H128.636C130.365 40.5582 131.824 41.846 132.039 43.562L133.1 52.0528C138.684 53.329 143.682 56.1428 147.626 60.0249L155.973 56.6562C157.557 56.0165 159.371 56.6415 160.226 58.1215L164.4 65.3511C165.254 66.8311 164.889 68.7145 163.542 69.7671L156.09 75.5942C156.491 77.5644 156.701 79.604 156.701 81.6927C156.701 85.0436 156.159 88.268 155.158 91.2827L162.503 96.912C163.186 97.4357 163.375 98.3847 162.945 99.1302L157.296 108.915C156.865 109.661 155.949 109.971 155.154 109.641L145.197 105.51C141.486 108.459 137.071 110.558 132.244 111.515L131.158 119.842C130.936 121.55 129.48 122.827 127.758 122.827H119.472C117.75 122.827 116.295 121.55 116.072 119.842L114.766 109.834C111.265 108.397 108.09 106.326 105.386 103.763L96.544 107.409C94.955 108.064 93.1264 107.442 92.2671 105.954L88.1157 98.7631C87.2563 97.2746 87.6316 95.3798 88.9935 94.3313L96.6453 88.4403C96.1535 86.2701 95.8939 84.0117 95.8939 81.6927C95.8939 80.9002 95.9242 80.1148 95.9837 79.3376L86.0359 71.7637C84.6629 70.7183 84.2806 68.8153 85.1435 67.3208L89.2786 60.1586C90.1415 58.664 91.9806 58.0436 93.5725 58.71L102.693 62.5281C106.105 58.3316 110.613 55.0624 115.781 53.1571L116.98 43.562Z"
             fill="#E8DBFB"
           />

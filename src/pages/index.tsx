@@ -2,7 +2,7 @@ import React from 'react'
 import tw, { styled } from 'twin.macro'
 import Image from 'gatsby-image'
 import scrollTo from 'gatsby-plugin-smoothscroll'
-import { Layout, Services, MissionVison } from '../components'
+import { Layout, Services, MissionVison, WhoAreWe } from '../components'
 import colors from '../components/colors'
 import { useAsset } from '../hooks'
 import { BigButtonWhite, BigButtonYellowShadow } from '../components/common'
@@ -30,7 +30,7 @@ export default function Home(): JSX.Element {
             Transformation <br /> through Disruptive Technologies
           </h1>
 
-          <div tw="py-6">
+          <div tw="py-12">
             <BigButtonWhite to="#booking-section" onClick={() => scrollTo(`#booking-section`)}>
               LEARN MORE
             </BigButtonWhite>
@@ -43,6 +43,7 @@ export default function Home(): JSX.Element {
       </div>
       <MissionVison />
       <Services />
+      <WhoAreWe />
       {/* <Process />
       <Why />
       <Testimonials />

@@ -125,9 +125,9 @@ export default function Navigation(): JSX.Element {
       <div tw="flex-none md:flex-1"></div>
 
       <NavigationView className={visible ? '' : 'invisibleNav'}>
-        <NavRoute to="/" setVisibility={setVisibility}>
+        {/* <NavRoute to="/" setVisibility={setVisibility}>
           About Us
-        </NavRoute>
+        </NavRoute> */}
         {/* 
         <NavLinkContainer>
           <NavLink

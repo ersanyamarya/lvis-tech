@@ -1,3 +1,4 @@
 import Services from './services'
 import MissionVison from './mission-vision'
-export { Services, MissionVison }
+import WhoAreWe from './who-are-we'
+export { Services, MissionVison, WhoAreWe }

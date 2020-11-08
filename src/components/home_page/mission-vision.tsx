@@ -1,32 +1,22 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import tw, { styled } from 'twin.macro'
 import colors from '../colors'
-import Image from 'gatsby-image'
 
 const Mission = styled.div`
-  ${tw`p-16 w-2/5 flex flex-col items-center m-0`}
+  ${tw`p-16 lg:w-2/5 flex flex-col items-center mx-4 lg:m-0 text-center`}
   color:${colors.accent};
   background-color: ${colors.primaryLight};
 `
 
 const Vision = styled.div`
-  ${tw`p-16 w-2/5 flex flex-col items-center m-0`}
+  ${tw`p-16 lg:w-2/5 flex flex-col items-center mx-4 lg:m-0 text-center`}
   color:${colors.baseLight};
   background-color: ${colors.accent};
 `
 
-const Step = styled.p`
-  ${tw`text-sm lg:text-xl p-3 m-2 bg-gray-200 rounded`}
-`
-
-const HeroImage = styled(Image)`
-  ${tw` m-0 w-screen z-0 absolute`}
-  height:80vh;
-`
-
 export default function MissionVison(): JSX.Element {
   return (
-    <div tw="py-32 flex justify-center ">
+    <div tw="py-32 flex justify-center flex-col lg:flex-row">
       {/* <HeroImage fluid={heroImage.fluid} /> */}
 
       <Vision>

@@ -4,9 +4,15 @@ dotenv.config()
 
 module.exports = {
   siteMetadata: {
-    title: ` Your Physio`,
-    siteUrl: `https://github.com/ersanyamarya/lvis-tech`,
-    description: `Consult with a YourPhysio therapist from your home free of cost.`,
+    title: `Lvis Tech`,
+    siteUrl: `https://www.lvistech.in`,
+    description: `Transformation through Disruptive Technologies.`,
+    titleTemplate: '%s · Lvis Tech',
+    url: `https://www.lvistech.in`, // no trailing slash!
+    image: '/images/logo.png',
+    owner: 'Lvis Tech',
+    twitterUsername: '@lvistech',
+    facebookAppID: '',
   },
   plugins: [
     'gatsby-plugin-emotion',

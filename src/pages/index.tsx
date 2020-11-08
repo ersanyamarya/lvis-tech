@@ -5,7 +5,7 @@ import scrollTo from 'gatsby-plugin-smoothscroll'
 import { Layout, Services, MissionVison, WhoAreWe } from '../components'
 import colors from '../components/colors'
 import { useAsset } from '../hooks'
-import { BigButtonWhite, BigButtonYellowShadow } from '../components/common'
+import { BigButtonWhite, BigButtonYellow } from '../components/common'
 
 const HeroImage = styled(Image)`
   ${tw` m-0 w-screen z-0 absolute`}
@@ -13,7 +13,8 @@ const HeroImage = styled(Image)`
 `
 
 const HeroContent = styled.div`
-  ${tw`z-50 absolute top-0 left-0 text-white m-auto  p-4 lg:py-20 lg:px-64`}
+  ${tw`z-50 absolute top-0 left-0 text-white w-screen
+  lg:w-3/4 p-4 mt-32 lg:m-0 lg:py-20 lg:px-56`}
   height:40vh;
   color: ${colors.baseLight};
 `
@@ -26,18 +27,15 @@ export default function Home(): JSX.Element {
       <div tw="relative">
         <HeroImage fluid={heroImage.fluid} />
         <HeroContent>
-          <h1 tw="m-0 text-3xl lg:text-6xl w-screen lg:w-3/4 font-bold">
-            Transformation <br /> through Disruptive Technologies
-          </h1>
-
-          <div tw="py-12">
-            <BigButtonWhite to="#booking-section" onClick={() => scrollTo(`#booking-section`)}>
+          <h1 tw="m-0 text-4xl lg:text-6xl font-bold">Transformation through Disruptive Technologies</h1>
+          <div tw="flex justify-between flex-col lg:flex-row">
+            <BigButtonWhite tw="my-6 lg:m-0 " to="#booking-section" onClick={() => scrollTo(`#booking-section`)}>
               LEARN MORE
             </BigButtonWhite>
 
-            <BigButtonYellowShadow tw="m-8" to="#booking-section" onClick={() => scrollTo(`#booking-section`)}>
+            <BigButtonYellow to="#booking-section" onClick={() => scrollTo(`#booking-section`)}>
               CONTACT US
-            </BigButtonYellowShadow>
+            </BigButtonYellow>
           </div>
         </HeroContent>
       </div>

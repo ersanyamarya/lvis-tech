@@ -4,6 +4,7 @@ import Navigation from './navigation'
 import tw, { styled } from 'twin.macro'
 import Footer from './footer'
 import colors from './colors'
+import SEO from './SEO'
 
 const Main = styled.main`
   ${tw`m-0 z-0`}
@@ -14,6 +15,7 @@ interface Props {
 export default function Layout({ children }: Props): JSX.Element {
   return (
     <>
+      <SEO />
       <Global
         styles={css`
           * {

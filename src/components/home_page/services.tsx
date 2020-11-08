@@ -18,7 +18,7 @@ const Body = styled.div`
 `
 
 const Accord = styled.div`
-  ${tw`lg:p-8 w-1/4 m-5 rounded-lg shadow-lg`}
+  ${tw`p-2 lg:p-8 w-full m-5 lg:w-1/4 rounded-lg shadow-lg`}
   color:${colors.accent};
   background-color: ${colors.base};
 `
@@ -28,7 +28,7 @@ export default function Services(): JSX.Element {
   return (
     <ServiceContainer>
       <h2 tw="text-4xl text-center">Our Services</h2>
-      <div tw="flex flex-wrap justify-center">
+      <div tw="flex flex-wrap justify-around ">
         {services.map(service => {
           return (
             <Accord key={service.id}>

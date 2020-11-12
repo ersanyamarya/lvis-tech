@@ -2,6 +2,7 @@ import { Link } from 'gatsby'
 import React from 'react'
 import tw, { styled } from 'twin.macro'
 import colors from './colors'
+
 const FooterContainer = styled.div`
   ${tw` px-8 pt-8 pb-2 lg:px-20 divide-y`}
   color:${colors.base};
@@ -9,11 +10,6 @@ const FooterContainer = styled.div`
   & p {
     ${tw`py-1 text-base`}
   }
-`
-
-const Bottom = styled.div`
-  ${tw`flex justify-between mt-16`}
-  color:${colors.accentLight};
 `
 
 export default function Footer(): JSX.Element {
@@ -41,10 +37,6 @@ export default function Footer(): JSX.Element {
 
         <p tw="m-auto">@2020 by LvisTech</p>
       </div>
-      {/* <Bottom>
-        <Link to="/privacy-policy">Privacy Policy</Link>
-        <Link to="/terms-and-conditions">Terms & Conditions</Link>
-      </Bottom> */}
     </FooterContainer>
   )
 }

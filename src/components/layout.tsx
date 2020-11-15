@@ -47,7 +47,7 @@ export default function Layout({ children }: Props): JSX.Element {
             width: 5rem;
           }
           h1 {
-            ${tw`text-3xl sm:text-6xl`}
+            ${tw`text-4xl sm:text-5xl`}
           }
           h2 {
             ${tw`text-xl`}

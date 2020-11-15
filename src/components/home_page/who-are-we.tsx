@@ -26,15 +26,15 @@ const HeroImage = styled(Image)`
 
 export default function WhoAreWe(): JSX.Element {
   return (
-    <div tw="p-4 lg:p-32 flex justify-center flex-col lg:flex-row">
+    <div tw="p-4 lg:px-32 flex justify-center flex-col lg:flex-row">
       <div tw="flex-1 lg:mx-16 py-10">
-        <h2 tw="text-3xl py-6 font-bold">Who are we</h2>
-        <p tw="text-lg">
+        <h2 tw="text-4xl py-6 font-bold">Who are we</h2>
+        <p tw="text-lg lg:text-xl">
           We are a boutique technology consulting firm backed by thought leaders and industry practitioners that enables
           our customers to succeed with their modern technology investments.
         </p>
       </div>
-      <svg tw="flex-1 lg:mx-16" viewBox="0 0 446 327" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg tw="w-full max-w-xl m-auto lg:mx-16 " viewBox="0 0 446 327" fill="none" xmlns="http://www.w3.org/2000/svg">
         <mask id="path-1-inside-1" fill="white">
           <path
             fillRule="evenodd"

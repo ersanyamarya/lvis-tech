@@ -5,8 +5,8 @@ const colors = {
   base: '#FAFAFB',
   baseLight: '#FFF',
   baseDark: '#FBFBFB',
-  accent: '#603973',
-  accentLight: '#E8DBFB',
+  accent: '#413973',
+  accentLight: '#E5E0FF',
   accentDark: '#3B465A',
 }
 export default colors

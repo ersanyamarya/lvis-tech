@@ -28,8 +28,8 @@ export default function WhoAreWe(): JSX.Element {
   return (
     <div tw="p-4 lg:px-32 flex justify-center flex-col lg:flex-row">
       <div tw="flex-1 lg:mx-16 py-10">
-        <h2 tw="text-4xl py-6 font-bold">Who are we</h2>
-        <p tw="text-lg lg:text-xl">
+        <h2 tw="text-3xl py-6 font-bold">Who are we</h2>
+        <p tw="text-lg">
           We are a boutique technology consulting firm backed by thought leaders and industry practitioners that enables
           our customers to succeed with their modern technology investments.
         </p>

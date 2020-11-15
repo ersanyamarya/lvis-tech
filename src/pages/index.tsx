@@ -14,7 +14,7 @@ const HeroImage = styled(Image)`
 
 const HeroContent = styled.div`
   ${tw`z-50 absolute top-0 left-0 text-white w-screen
-  lg:w-3/4 p-4 mt-32 lg:m-0 lg:py-20 lg:px-56`}
+  lg:w-3/4 p-4 mt-16 lg:mt-32 lg:py-20 lg:px-56`}
   height:40vh;
   color: ${colors.baseLight};
 `
@@ -28,14 +28,15 @@ export default function Home(): JSX.Element {
         <HeroImage fluid={heroImage.fluid} />
         <HeroContent>
           <h1 tw="m-0 text-4xl lg:text-6xl font-bold">Transformation through Disruptive Technologies</h1>
-          <div tw="flex justify-between flex-col lg:flex-row">
+          <div tw="flex justify-between flex-col lg:mt-12 lg:flex-row">
             <BigButtonWhite tw="my-6 lg:m-0 " to="#booking-section" onClick={() => scrollTo(`#booking-section`)}>
               LEARN MORE
             </BigButtonWhite>
-
+            <div tw="w-12"></div>
             <BigButtonYellow to="#booking-section" onClick={() => scrollTo(`#booking-section`)}>
               CONTACT US
             </BigButtonYellow>
+            <div tw="flex-1"></div>
           </div>
         </HeroContent>
       </div>

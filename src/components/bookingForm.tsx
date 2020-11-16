@@ -133,13 +133,15 @@ export default function Booking(): JSX.Element {
   }
   return (
     <>
-      <div tw="pt-10 " id="booking-section"></div>
+      <div tw="pt-16" id="booking-section"></div>
+
       <BookingForm className={state.status === 'PENDING' ? 'form-pending' : ''}>
         {state.status === 'ERROR' && (
           <div style={{ maxWidth: '500px', margin: 'auto' }}>
             <p tw="text-xl text-center block text-red-400"> Some error while sending .. Try again {state.name}</p>
           </div>
         )}
+
         <div tw="flex-1 px-2 lg:px-10 m-auto lg:px-32">
           <h1 tw="font-bold pb-10">
             Have an idea? <br /> Tell us about it!

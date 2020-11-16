@@ -14,7 +14,7 @@ const HeroImage = styled(Image)`
 
 const HeroContent = styled.div`
   ${tw`z-50 absolute top-0 left-0 text-white w-screen
-  lg:w-3/4 p-4 mt-16 lg:mt-32 lg:py-20 lg:px-56`}
+  lg:w-3/4 p-4 mt-16 lg:py-16 lg:px-56`}
   height:40vh;
   color: ${colors.baseLight};
 `

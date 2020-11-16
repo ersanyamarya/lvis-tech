@@ -34,7 +34,7 @@ export default function WhoAreWe(): JSX.Element {
           our customers to succeed with their modern technology investments.
         </p>
       </div>
-      <svg tw="w-full max-w-xl m-auto lg:mx-16 " viewBox="0 0 446 327" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg tw="flex-1 max-w-xl m-auto" viewBox="0 0 446 327" fill="none" xmlns="http://www.w3.org/2000/svg">
         <mask id="path-1-inside-1" fill="white">
           <path
             fillRule="evenodd"

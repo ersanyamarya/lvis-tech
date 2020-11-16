@@ -9,7 +9,7 @@ const Mission = styled.div`
 `
 
 const Vision = styled.div`
-  ${tw`p-16 lg:w-2/5 flex flex-col items-center mx-4 lg:m-0 text-center`}
+  ${tw`p-16 lg:w-2/5 flex flex-col items-center mx-4 lg:m-0 text-center `}
   color:${colors.baseLight};
   background-color: ${colors.accent};
 `
@@ -20,7 +20,7 @@ export default function MissionVison(): JSX.Element {
       {/* <HeroImage fluid={heroImage.fluid} /> */}
 
       <Vision>
-        <h2 tw="text-4xl">Our Vision</h2>
+        <h2 tw="text-4xl pb-3 mb-2 border-b-4">Our Vision</h2>
         <svg width="145" height="155" viewBox="0 0 145 155" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect
             x="2.00024"
@@ -176,7 +176,9 @@ export default function MissionVison(): JSX.Element {
         </p>
       </Vision>
       <Mission>
-        <h2 tw="text-4xl">Our Mission</h2>
+        <h2 tw="text-4xl pb-3 mb-2 border-b-4" style={{ borderColor: colors.accent }}>
+          Our Mission
+        </h2>
         <svg width="205" height="137" viewBox="0 0 205 137" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect
             x="16.3076"

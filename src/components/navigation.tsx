@@ -26,7 +26,7 @@ const TitleButton = styled.button`
 const NavigationView = styled.nav`
   ${tw`w-screen h-screen flex-col justify-center m-0 z-10  items-center inset-0 fixed flex
   transition-all duration-200 ease-in-out
-  lg:block lg:static lg:inset-auto lg:h-auto lg:w-auto lg:bg-transparent lg:mr-16 lg:visible`}
+  lg:block lg:static lg:inset-auto lg:h-auto lg:w-auto lg:bg-transparent lg:mr-10 lg:visible`}
   /* transition-all ease-in-out duration-500 */
   background-color: ${colors.accentDark};
   &.visibleNav {
@@ -128,6 +128,7 @@ export default function Navigation(): JSX.Element {
         {/* <NavRoute to="/" setVisibility={setVisibility}>
           About Us
         </NavRoute> */}
+
         {/* 
         <NavLinkContainer>
           <NavLink

@@ -150,7 +150,7 @@ export default function Booking(): JSX.Element {
           </h1>
 
           <p tw="flex pt-5 items-center">
-            <svg tw="mr-5" width="36" viewBox="0 0 54 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg tw="mr-4 w-5" viewBox="0 0 54 36" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect x="2" y="2" width="50" height="32" rx="4" fill="#F6F1FD" stroke="#413973" strokeWidth="3" />
               <path
                 d="M49.5783 32.2395C50.2851 32.8429 49.8583 34 48.929 34L5.4307 34C4.50134 34 4.07459 32.8429 4.78138 32.2395L25.8812 14.2246C26.6292 13.5859 27.7305 13.5859 28.4785 14.2246L49.5783 32.2395Z"
@@ -169,7 +169,7 @@ export default function Booking(): JSX.Element {
           </p>
 
           <p tw="flex pt-5 items-center">
-            <svg height="36" tw="mr-8" viewBox="0 0 32 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg tw="mr-4 w-4" viewBox="0 0 32 50" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect x="2" y="2" width="28" height="46" rx="4" fill="#F6F1FD" stroke="#413973" strokeWidth="3" />
               <rect x="7" y="8" width="18" height="23" fill="white" />
               <circle cx="16" cy="40" r="3" fill="#413973" />
@@ -177,7 +177,7 @@ export default function Booking(): JSX.Element {
             {contact.phone}
           </p>
           <p tw="flex pt-5 items-center">
-            <svg height="36" tw="mr-8" viewBox="0 0 28 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg tw="mr-4 w-12" viewBox="0 0 28 43" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M26.5 14C26.5 15.6724 25.9655 17.9652 25.0099 20.6307C24.065 23.2661 22.752 26.1486 21.2936 28.9585C18.8443 33.6779 16.0534 38.0637 14.0166 40.6574C12.1694 38.2248 9.42637 33.905 6.95259 29.2013C5.451 26.3461 4.07511 23.399 3.0784 20.7094C2.06876 17.985 1.5 15.6595 1.5 14C1.5 7.09644 7.09644 1.5 14 1.5C20.9036 1.5 26.5 7.09644 26.5 14Z"
                 fill="#F6F1FD"

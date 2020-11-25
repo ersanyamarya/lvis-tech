@@ -28,8 +28,6 @@ export function useServices(): Service[] {
   `)
 
   return data.allContentfulServices.nodes.map((node, index) => {
-    console.log(node.title)
-
     return {
       id: node.id,
       featuredImage: node.featuredImage.fluid,

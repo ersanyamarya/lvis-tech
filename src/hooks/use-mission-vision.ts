@@ -28,8 +28,6 @@ export function useMissionVision(): Service[] {
   `)
 
   return data.allContentfulMissionVision.nodes.map((node, index) => {
-    console.log(node.title)
-
     return {
       id: node.id,
       featuredImage: node.featuredImage.fluid,

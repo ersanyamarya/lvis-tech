@@ -1,5 +1,6 @@
 import { useServices } from './use-services'
 import { useMissionVision } from './use-mission-vision'
+import { useContacts } from './use-contacts'
 import { useAsset } from './use-asset'
 import { UseSiteMeata } from './use-site-meta'
 interface User {
@@ -83,5 +84,5 @@ interface File {
   id: string
   title: string
 }
-export { useServices, useAsset, useMissionVision, UseSiteMeata }
+export { useServices, useAsset, useMissionVision, UseSiteMeata, useContacts }
 export type { Post, User, Service, StaticPage, Why, Faq, Physiotherapist, File, Testimonial }

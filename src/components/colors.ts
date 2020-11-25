@@ -6,7 +6,7 @@ const colors = {
   baseLight: '#FFF',
   baseDark: '#FBFBFB',
   accent: '#413973',
-  accentLight: '#E5E0FF',
+  accentLight: '#D9E1FF',
   accentDark: '#3B465A',
 }
 export default colors

@@ -27,12 +27,12 @@ export default function Home(): JSX.Element {
       <div tw="relative">
         <HeroImage fluid={heroImage.fluid} />
         <HeroContent>
-          <h1 tw="m-0 text-4xl lg:text-6xl font-bold">Transformation through Disruptive Technologies</h1>
-          <div tw="flex justify-between flex-col lg:mt-12 lg:flex-row">
+          <h1 tw="m-0 mt-10 sm:mt-0 text-4xl lg:text-6xl font-bold">Transformation through Disruptive Technologies</h1>
+          <div tw="flex justify-between flex-col m-0 lg:mt-8 lg:flex-row">
             <BigButtonWhite tw="my-6 lg:m-0 " to="#booking-section" onClick={() => scrollTo(`#booking-section`)}>
               LEARN MORE
             </BigButtonWhite>
-            <div tw="w-12"></div>
+            <div tw="m-0 sm:w-10"></div>
             <BigButtonYellow to="#booking-section" onClick={() => scrollTo(`#booking-section`)}>
               CONTACT US
             </BigButtonYellow>

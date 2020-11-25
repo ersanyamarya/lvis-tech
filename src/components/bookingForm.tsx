@@ -2,6 +2,7 @@ import React, { useReducer } from 'react'
 import tw, { styled } from 'twin.macro'
 import { keyframes } from '@emotion/core'
 import colors from './colors'
+import { useContacts } from '../hooks'
 
 interface Action {
   type: string
@@ -59,7 +60,7 @@ const BookingForm = styled.div`
   }
 `
 const Button = styled.button`
-  ${tw`mt-8 px-10 py-3 shadow-lg rounded-lg text-lg w-full font-bold`}
+  ${tw`mt-8 px-10 py-4 shadow-lg rounded-lg text-lg w-full font-bold`}
   background-color:${colors.primary};
   color: ${colors.accent};
 `
@@ -96,6 +97,7 @@ const reducer = (state: FormState, action: Action) => {
 }
 
 export default function Booking(): JSX.Element {
+  const contact = useContacts()
   const [state, dispatch] = useReducer(reducer, INITIAL_STATE)
   const setStatus = status => dispatch({ type: 'updateStatus', status })
 
@@ -163,16 +165,16 @@ export default function Booking(): JSX.Element {
                 strokeWidth="3"
               />
             </svg>
-            hello@LvisTech.com
+            {contact.email}
           </p>
 
           <p tw="flex pt-5 items-center">
             <svg height="36" tw="mr-8" viewBox="0 0 32 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="2" y="2" width="28" height="46" rx="4" fill="#F6F1FD" stroke="#413973" stroke-width="3" />
+              <rect x="2" y="2" width="28" height="46" rx="4" fill="#F6F1FD" stroke="#413973" strokeWidth="3" />
               <rect x="7" y="8" width="18" height="23" fill="white" />
               <circle cx="16" cy="40" r="3" fill="#413973" />
             </svg>
-            +91-9998899999
+            {contact.phone}
           </p>
           <p tw="flex pt-5 items-center">
             <svg height="36" tw="mr-8" viewBox="0 0 28 43" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -184,7 +186,7 @@ export default function Booking(): JSX.Element {
               />
               <circle cx="14" cy="15" r="5" fill="#413973" />
             </svg>
-            1722, street name, Colony, city, state, 111-111
+            {contact.address}
           </p>
         </div>
         <form name="Booking" onSubmit={handleSubmit} tw="flex-1 px-2 pt-10 lg:px-32 lg:pt-0">

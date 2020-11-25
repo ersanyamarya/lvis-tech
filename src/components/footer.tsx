@@ -4,7 +4,7 @@ import tw, { styled } from 'twin.macro'
 import colors from './colors'
 
 const FooterContainer = styled.div`
-  ${tw` px-8 pt-8 pb-2 lg:px-20 divide-y`}
+  ${tw` px-8 lg:px-20 divide-y`}
   color:${colors.base};
   background-color: ${colors.accent};
   & p {
@@ -15,7 +15,7 @@ const FooterContainer = styled.div`
 export default function Footer(): JSX.Element {
   return (
     <FooterContainer>
-      <h2 tw="text-center py-24">hello@LvisTech.com</h2>
+      <h2 tw="text-center py-16">sales@LvisTech.com</h2>
       <div tw="flex py-5 flex-col lg:flex-row">
         <svg
           tw="m-auto mb-3"
@@ -32,7 +32,7 @@ export default function Footer(): JSX.Element {
         </svg>
 
         <Link tw="m-auto mb-3" to="/privacy-policy">
-          Privacy Policy
+          {/* Privacy Policy */}
         </Link>
 
         <p tw="m-auto">@2020 by LvisTech</p>

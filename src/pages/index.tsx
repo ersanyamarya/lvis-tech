@@ -20,7 +20,7 @@ const HeroContent = styled.div`
 `
 
 export default function Home(): JSX.Element {
-  const heroImage = useAsset('Services-Hero')
+  const heroImage = useAsset('hero-image')
 
   return (
     <Layout>

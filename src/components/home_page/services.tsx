@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import tw, { styled } from 'twin.macro'
 import Image from 'gatsby-image'
 import { useServices } from '../../hooks'
@@ -49,6 +49,10 @@ const Accord = styled.div`
 
 export default function Services(): JSX.Element {
   const [services, setServices] = useState(useServices())
+  const [largeScreen, setLargeScreen] = useState(false)
+  useEffect(() => {
+    if (typeof window !== 'undefined') setLargeScreen(window.matchMedia('(min-width: 768px)').matches)
+  })
   return (
     <ServiceContainer>
       <div tw="flex justify-center">
@@ -67,18 +71,23 @@ export default function Services(): JSX.Element {
                   if (s.id === service.id) s.flip = !s.flip
                 })
                 setServices([...services])
+                return false
               }}
               onMouseLeave={() => {
                 services.forEach(s => {
-                  if (s.id === service.id) s.flip = false
+                  if (s.id === service.id && s.flip) s.flip = false
                 })
                 setServices([...services])
+                return false
               }}
               onMouseEnter={() => {
-                services.forEach(s => {
-                  if (s.id === service.id) s.flip = true
-                })
-                setServices([...services])
+                if (largeScreen) {
+                  services.forEach(s => {
+                    if (s.id === service.id && !s.flip) s.flip = true
+                  })
+                  setServices([...services])
+                }
+                return false
               }}
             >
               <Container>

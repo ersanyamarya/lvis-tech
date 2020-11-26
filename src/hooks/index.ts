@@ -32,7 +32,9 @@ interface Service {
   title: string
   slug: string
   description?: string
+  longDescription?: string
   featuredImage?: any
+  flip: boolean
 }
 
 interface StaticPage {

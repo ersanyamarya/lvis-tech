@@ -11,6 +11,9 @@ export function useServices(): Service[] {
           title
           slug
           description
+          longDescription {
+            longDescription
+          }
           featuredImage {
             fluid {
               sizes
@@ -34,6 +37,8 @@ export function useServices(): Service[] {
       title: node.title,
       slug: node.slug,
       description: node.description,
+      longDescription: node.longDescription ? node.longDescription.longDescription : node.description,
+      flip: false,
     }
   })
 }

@@ -76,6 +76,7 @@ export default function Layout({ children }: Props): JSX.Element {
           img {
             padding: 0;
             margin: 0;
+            backface-visibility: inherit;
           }
         `}
       />

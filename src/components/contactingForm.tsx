@@ -29,7 +29,7 @@ const loading = keyframes`
   }
 `
 
-const BookingForm = styled.div`
+const ContactForm = styled.div`
   ${tw` p-8 lg:flex`}
 
   background-color:${colors.baseDark};
@@ -96,7 +96,7 @@ const reducer = (state: FormState, action: Action) => {
   }
 }
 
-export default function Booking(): JSX.Element {
+export default function Contacting(): JSX.Element {
   const contact = useContacts()
   const [state, dispatch] = useReducer(reducer, INITIAL_STATE)
   const setStatus = status => dispatch({ type: 'updateStatus', status })
@@ -123,21 +123,34 @@ export default function Booking(): JSX.Element {
   }
   if (state.status === 'SUCCESS') {
     return (
-      <BookingForm>
+      <ContactForm>
         <div style={{ maxWidth: '500px', margin: 'auto' }}>
-          <p tw="text-xl text-center block"> Hey, {state.name}, we saved your booking</p>
-          <Button type="reset" onClick={() => dispatch({ type: 'reset' })}>
-            Book More
-          </Button>
+          <span tw="cursor-pointer" onClick={() => dispatch({ type: 'reset' })}>
+            <svg tw=" m-auto" width="80" height="80" viewBox="0 0 80 80" fill="none">
+              <rect x="2" y="2" width="76" height="76" rx="38" fill="#D9E1FF" stroke="#413973" strokeWidth="3" />
+              <path
+                d="M23 42L31.5858 50.5858C32.3668 51.3668 33.6332 51.3668 34.4142 50.5858L56 29"
+                stroke="#413973"
+                strokeWidth="3"
+                strokeLinecap="round"
+              />
+            </svg>
+          </span>
+
+          <Title>Thank You for reaching out!</Title>
+          <p tw="text-xl text-center block">
+            {' '}
+            Thanks for your interest in Lvistech. One of our representatives will get in touch with you soon.
+          </p>
         </div>
-      </BookingForm>
+      </ContactForm>
     )
   }
   return (
     <>
       <div tw="pt-16" id="booking-section"></div>
 
-      <BookingForm className={state.status === 'PENDING' ? 'form-pending' : ''}>
+      <ContactForm className={state.status === 'PENDING' ? 'form-pending' : ''}>
         {state.status === 'ERROR' && (
           <div style={{ maxWidth: '500px', margin: 'auto' }}>
             <p tw="text-xl text-center block text-red-400"> Some error while sending .. Try again {state.name}</p>
@@ -221,7 +234,7 @@ export default function Booking(): JSX.Element {
           />
           <Button type="submit">Submit</Button>
         </form>
-      </BookingForm>
+      </ContactForm>
     </>
   )
 }

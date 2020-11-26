@@ -1,17 +1,18 @@
 const dotenv = require('dotenv')
+dotenv.config()
+
 const nodemailer = require('nodemailer')
 const transporter = nodemailer.createTransport({
   host: 'smtp.gmail.com',
   port: 465,
   secure: true, // use SSL
   auth: {
-    user: 'analytics.yourphysio@gmail.com',
-    pass: 'yourphysio.nagpur',
+    user: process.env.EMAIL_ADDRESS,
+    pass: process.env.PASSWORD,
   },
 })
 const { query } = require('./utils/hasura')
 const { generateHtml } = require('./utils/generate-html')
-dotenv.config()
 exports.handler = async (event, _context, callback) => {
   const { name, phone, date, time } = JSON.parse(event.body)
 
@@ -28,8 +29,8 @@ exports.handler = async (event, _context, callback) => {
   }).catch(err => callback(err, null))
 
   const message = {
-    from: 'analytics.yourphysio@gmail.com',
-    to: 'analytics.yourphysio@gmail.com',
+    from: process.env.EMAIL_ADDRESS,
+    to: process.env.EMAIL_ADDRESS,
     subject: 'New booking Confirmation',
     html: generateHtml({ name, phone, date, time }),
   }

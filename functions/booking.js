@@ -32,7 +32,7 @@ exports.handler = async (event, _context, callback) => {
     from: process.env.EMAIL_ADDRESS,
     to: process.env.EMAIL_ADDRESS,
     subject: 'New booking Confirmation',
-    html: generateHtml({ name, phone, date, time }),
+    html: generateHtml({ name, email, message }),
   }
   callback(null, { statusCode: 200, body: JSON.stringify({ result }) })
 

@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import tw, { styled } from 'twin.macro'
-import Image from 'gatsby-image'
 import { useServices } from '../../hooks'
 import colors from '../colors'
 
@@ -14,7 +13,7 @@ const Title = styled.p`
   ${tw`py-0 text-xl  m-0 text-center font-bold`}
 `
 const Back = styled.div`
-  ${tw`absolute text-base w-full h-full flex flex-col  p-8 m-0`}
+  ${tw`absolute text-base w-full h-full flex flex-col  p-8 pt-20 m-0`}
   background-color: ${colors.accent};
   color: ${colors.accentLight};
 
@@ -40,7 +39,7 @@ const Container = styled.div`
 `
 const Accord = styled.div`
   ${tw`w-full m-5 sm:mx-1 lg:w-1/4 rounded-lg bg-transparent cursor-pointer`}
-  height: 23rem;
+  height: 24rem;
 
   &.flipper > div {
     transform: rotateY(180deg);

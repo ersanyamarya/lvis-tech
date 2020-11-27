@@ -1,37 +1,36 @@
-function generateHtml({ name, phone, date, time }) {
+function generateHtml({ name, email, message }) {
   return `<!DOCTYPE html>
-        <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Booking Confirmation</title>
-            <style>
-                * {
-                    margin: 0;
-                    font-family: 'Open Sans', sans-serif;
-                }
-                h1{
-                    padding: 1rem;
-                    background-color: #00ACC1;
-                    color: #EEEEEE;
-                    text-align: center;
-                }
-                p{
-                    padding:  0.5rem 1rem;
-                    color: #007381;
-                    background-color: #FBFBFB;
-                }
-            </style>
-        </head>
-        <body>
-            <h1>Booking Confirmation</h1>
-
-            <p>Name:  ${name}</p>
-            <p>Phone: ${phone}</p>
-            <p>Date:  ${date}</p>
-            <p>Time:  ${time}</p>
-        </body>
-   
-        </html>`
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Booking Confirmation</title>
+      <style>
+        * {
+          margin: 0;
+          font-family: 'Open Sans', sans-serif;
+        }
+        h1 {
+          padding: 1rem;
+          background-color: #413973;
+          color: #eeeeee;
+          text-align: center;
+        }
+        p {
+          padding: 0.8rem 1rem;
+          color: #413973;
+          background-color: #fbfbfb;
+        }
+      </style>
+    </head>
+    <body>
+      <h1>Enquiry</h1>
+  
+      <p>Name: ${name}</p>
+      <p>Email: ${email}</p>
+      <p>Message: ${message}</p>
+    </body>
+  </html>
+  `
 }
 exports.generateHtml = generateHtml

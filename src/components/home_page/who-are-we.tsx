@@ -1,32 +1,13 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import tw, { styled } from 'twin.macro'
-import colors from '../colors'
-import Image from 'gatsby-image'
 
-const Mission = styled.div`
-  ${tw`p-16 w-2/5 flex flex-col items-center m-0`}
-  color:${colors.accent};
-  background-color: ${colors.primaryLight};
-`
-
-const Vision = styled.div`
-  ${tw`p-16 w-2/5 flex flex-col items-center m-0`}
-  color:${colors.baseLight};
-  background-color: ${colors.accent};
-`
-
-const Step = styled.p`
-  ${tw`text-sm lg:text-xl p-3 m-2 bg-gray-200 rounded`}
-`
-
-const HeroImage = styled(Image)`
-  ${tw` m-0 w-screen z-0 absolute`}
-  height:80vh;
+const WhoSection = styled.div`
+  ${tw`p-4 lg:pt-16 lg:pb-0 lg:px-32 flex justify-center flex-col lg:flex-row`}
 `
 
 export default function WhoAreWe(): JSX.Element {
   return (
-    <div tw="p-4 lg:pt-16 lg:pb-0 lg:px-32 flex justify-center flex-col lg:flex-row">
+    <WhoSection>
       <div tw="flex-1 lg:mx-16 pb-10 pt-16">
         <h2 tw="text-3xl py-6 font-bold">Who are we</h2>
         <p tw="text-lg ">
@@ -419,6 +400,6 @@ export default function WhoAreWe(): JSX.Element {
           fill="#413973"
         />
       </svg>
-    </div>
+    </WhoSection>
   )
 }

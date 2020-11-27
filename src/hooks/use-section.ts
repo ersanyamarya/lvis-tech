@@ -2,17 +2,16 @@ import { graphql, useStaticQuery } from 'gatsby'
 import { Service } from './index'
 import { Query } from '../types/generated'
 
-export function useServices(): Service[] {
+export function useSections(): Service[] {
   const data: Query = useStaticQuery(graphql`
     query {
-      allContentfulServices(sort: { order: ASC, fields: index }) {
+      allContentfulSections(sort: { order: ASC, fields: index }) {
         nodes {
           id
           title
           slug
-          description
-          longDescription {
-            longDescription
+          description {
+            description
           }
           featuredImage {
             fluid {
@@ -30,15 +29,13 @@ export function useServices(): Service[] {
     }
   `)
 
-  return data.allContentfulServices.nodes.map(node => {
+  return data.allContentfulSections.nodes.map(node => {
     return {
       id: node.id,
       featuredImage: node.featuredImage.fluid,
       title: node.title,
       slug: node.slug,
-      description: node.description,
-      longDescription: node.longDescription ? node.longDescription.longDescription : node.description,
-      flip: false,
+      description: node.description.description,
     }
   })
 }

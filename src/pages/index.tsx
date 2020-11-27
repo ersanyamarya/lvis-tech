@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import tw, { styled } from 'twin.macro'
 import Image from 'gatsby-image'
 import scrollTo from 'gatsby-plugin-smoothscroll'
@@ -6,6 +6,7 @@ import { Layout, Services, MissionVison, WhoAreWe, Contacting } from '../compone
 import colors from '../components/colors'
 import { useAsset } from '../hooks'
 import { BigButtonWhite, BigButtonYellow } from '../components/common'
+import { Sections } from '../components/home_page'
 
 const HeroImage = styled(Image)`
   ${tw` m-0 w-screen z-0 absolute`}
@@ -21,8 +22,10 @@ const HeroContent = styled.div`
 
 export default function Home(): JSX.Element {
   const heroImage = useAsset('hero-image')
-  const [formDone, setFormDone] = useState(true)
+  // const [formDone, setFormDone] = useState(true)
   return (
+    // <div tw="relative">
+    //   <div tw="absolute">
     <Layout>
       <div tw="relative">
         <HeroImage fluid={heroImage.fluid} />
@@ -43,15 +46,13 @@ export default function Home(): JSX.Element {
       <MissionVison />
       <Services />
       <WhoAreWe />
+      <Sections />
       <Contacting />
-
-      {/* <Process />
-      <Why />
-      <Testimonials />
-      
-      <Booking />
-      <ContactUs />
-      <Faq /> */}
     </Layout>
+    //   </div>
+    //   <div tw="absolute h-screen w-screen z-50 bg-red-300">
+    //     <h1>Sanyam</h1>
+    //   </div>
+    // </div>
   )
 }

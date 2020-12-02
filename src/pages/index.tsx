@@ -46,7 +46,7 @@ export default function Home(): JSX.Element {
       <MissionVison />
       <Services />
       <WhoAreWe />
-      <Sections />
+      {/* <Sections /> */}
       <Contacting />
     </Layout>
     //   </div>

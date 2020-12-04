@@ -9,7 +9,7 @@ import { useServices } from '../hooks'
 import { BigButtonYellowShadow } from './common'
 
 const Navbar = styled.header`
-  ${tw`flex items-center w-screen  p-6 px-2 lg:px-6 lg:justify-between shadow-xl m-0 z-10`}
+  ${tw`flex items-center w-screen  p-2 px-2 lg:px-6 lg:justify-between shadow-xl m-0 z-10`}
   background-color: ${colors.base};
   position: sticky;
   top: 0;

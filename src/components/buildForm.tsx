@@ -103,8 +103,8 @@ export default function Building(): JSX.Element {
         console.log(response)
         setStatus('SUCCESS')
       })
-      .catch(error => {
-        console.error(error)
+      .catch(() => {
+        // console.error(error)
         setStatus('ERROR')
       })
   }

@@ -4,9 +4,8 @@ const fetch = require('node-fetch')
 
 exports.handler = async (event, _context, callback) => {
   const { passkey } = JSON.parse(event.body)
-  console.log(passkey)
   if (passkey === process.env.PASSKEY) {
-    const result = await fetch('https://api.netlify.com/build_hooks/5fb193291db4d7d11c563c73', {
+    const result = await fetch('https://api.netlify.com/build_hooks/5fb193291db4d7d11c563c731', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -17,5 +16,7 @@ exports.handler = async (event, _context, callback) => {
       .catch(err => callback(err, null))
 
     callback(null, { statusCode: 200, body: JSON.stringify({ result }) })
-  } else callback('Passkey incorrect', null)
+  }
+  const err = new Error('The passkey was incorrect')
+  callback(err, null)
 }

@@ -2,45 +2,36 @@ const dotenv = require('dotenv')
 dotenv.config()
 
 const nodemailer = require('nodemailer')
+
 const transporter = nodemailer.createTransport({
-  host: 'smtp.gmail.com',
+  host: 'smtp.flockmail.com',
   port: 465,
   secure: true, // use SSL
   auth: {
-    user: process.env.EMAIL_ADDRESS,
-    pass: process.env.PASSWORD,
+    user: process.env.EMAIL,
+    pass: process.env.EMAIL_PASSWORD,
   },
 })
-const { query } = require('./utils/hasura')
+
 const { generateHtml } = require('./utils/generate-html')
+
 exports.handler = async (event, _context, callback) => {
-  const { name, phone, date, time } = JSON.parse(event.body)
+  const { name, email, message } = JSON.parse(event.body)
 
-  const result = await query({
-    query: `
-    mutation MyMutation($date: date!, $name: String!, $phone: String!, $time: timetz!) {
-      insert_Bookings_one(object: {time: $time, phone: $phone, name: $name, date: $date}) {
-        id
-        name
-      }
-    }
-    `,
-    variables: { name, phone, date, time },
-  }).catch(err => callback(err, null))
-
-  const message = {
-    from: process.env.EMAIL_ADDRESS,
-    to: process.env.EMAIL_ADDRESS,
+  const toSend = {
+    from: process.env.EMAIL,
+    to: process.env.EMAIL,
     subject: 'New booking Confirmation',
     html: generateHtml({ name, email, message }),
   }
-  callback(null, { statusCode: 200, body: JSON.stringify({ result }) })
-
-  transporter.sendMail(message, function (err, info) {
+  callback(null, { statusCode: 200, body: JSON.stringify({ name, email, message }) })
+  transporter.sendMail(toSend, function (err, info) {
     if (err) {
       console.log(err)
+      callback(err, null)
     } else {
       console.log(info)
+      callback(null, { statusCode: 200, body: JSON.stringify({ info }) })
     }
   })
 }

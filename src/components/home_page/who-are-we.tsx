@@ -12,7 +12,7 @@ export default function WhoAreWe(): JSX.Element {
       <WhoSection>
         <div tw="flex-1 lg:mx-16">
           <h2 tw="text-3xl py-6 font-bold">Who are we</h2>
-          <p tw="text-lg lg:w-3/4">
+          <p tw="text-lg lg:w-5/6">
             Founded by a group of seasoned technologists with deep expertise in applications engineering, large scale
             data management with distributed computing, and platforms engineering. Along with our technical and
             engineering expertise, we also bring decades of financial engineering and health care industry experience

@@ -13,7 +13,7 @@ const Title = styled.p`
   ${tw`py-0 text-xl  m-0 text-center font-bold`}
 `
 const Back = styled.div`
-  ${tw`absolute text-base w-full h-full flex flex-col  p-8 pt-20 m-0`}
+  ${tw`absolute text-base w-full h-full flex flex-col  p-8 pt-10 m-0`}
   background-color: ${colors.accent};
   color: ${colors.accentLight};
 
@@ -22,7 +22,7 @@ const Back = styled.div`
   transform: rotateY(180deg);
 `
 const Front = styled.div`
-  ${tw`absolute text-base w-full h-full flex flex-col lg:p-8 m-0`}
+  ${tw`absolute text-base w-full h-full flex flex-col lg:p-4 m-0`}
   background-color: ${colors.base};
   color: ${colors.accent};
 

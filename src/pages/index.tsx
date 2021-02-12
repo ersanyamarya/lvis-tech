@@ -30,7 +30,7 @@ export default function Home(): JSX.Element {
       <div tw="relative">
         <HeroImage fluid={heroImage.fluid} />
         <HeroContent>
-          <h1 tw="m-0 mt-10 sm:mt-10 mb-8 lg:mb-16 text-4xl lg:text-8xl font-bold">
+          <h1 tw="m-0 mt-10 sm:mt-10 mb-8 lg:mb-16 text-4xl lg:text-6xl font-bold">
             Transformation through Disruptive Technologies
           </h1>
           <div tw="flex justify-between flex-col m-0 lg:mt-8 lg:flex-row">

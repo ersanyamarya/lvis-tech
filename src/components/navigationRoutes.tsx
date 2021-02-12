@@ -5,14 +5,14 @@ import { Link } from 'gatsby'
 // md:opacity-100
 // md:block md:w-auto md:h-auto
 interface NavRouteProps {
-  children: string
+  children: any
   to: string
-  setVisibility: Dispatch<SetStateAction<boolean>>
+  // setVisibility: Dispatch<SetStateAction<boolean>>
 }
 
 const NavLink = styled(Link)`
   ${tw`p-3 text-2xl md:text-2xl`}
-  color: ${colors.baseLight};
+  color: ${colors.primary};
   text-decoration: none;
   &.current-page {
     ${tw`font-bold`}
@@ -23,13 +23,13 @@ const NavLink = styled(Link)`
   }
 `
 
-export default function NavRoute({ children, to, setVisibility }: NavRouteProps): JSX.Element {
+export default function NavRoute({ children, to }: NavRouteProps): JSX.Element {
   return (
     <NavLink
       to={to}
       activeClassName="current-page"
       onClick={() => {
-        setVisibility(false)
+        // setVisibility(false)
       }}
     >
       {children}

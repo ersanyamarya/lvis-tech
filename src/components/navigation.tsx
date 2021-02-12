@@ -76,9 +76,9 @@ const Icon = styled.svg`
 const ServiceCard = styled.div`
   ${tw`text-center w-36 sm:w-full m-5 sm:mx-1 lg:w-1/4 cursor-pointer `};
 
-  &:hover > img {
-    ${tw`shadow-lg p-4`}
-  }
+  // &:hover > img {
+  //   ${tw`shadow-lg p-4`}
+  // }
 `
 export default function Navigation(): JSX.Element {
   const [services] = useState(useServices())
@@ -94,16 +94,16 @@ export default function Navigation(): JSX.Element {
     <>
       <Navbar>
         {/* <TitleButton
-        onClick={() => {
-          setVisibility(!visible)
-        }}
-      >
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M2 3H22" stroke="white" strokeWidth="3" strokeLinecap="round" />
-          <path d="M2 12H22" stroke="white" strokeWidth="3" strokeLinecap="round" />
-          <path d="M2 21H22" stroke="white" strokeWidth="3" strokeLinecap="round" />
-        </svg>
-      </TitleButton> */}
+          onClick={() => {
+            setVisibility(!visible)
+          }}
+        >
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 3H22" stroke="white" strokeWidth="3" strokeLinecap="round" />
+            <path d="M2 12H22" stroke="white" strokeWidth="3" strokeLinecap="round" />
+            <path d="M2 21H22" stroke="white" strokeWidth="3" strokeLinecap="round" />
+          </svg>
+        </TitleButton> */}
         <Link tw="h-8 ml-2 lg:ml-4 my-auto" to="/">
           <svg width="134" height="29" viewBox="0 0 134 29" fill="none">
             <path

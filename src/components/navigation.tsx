@@ -175,7 +175,7 @@ export default function Navigation(): JSX.Element {
       </NavigationView>
 
       <div tw="flex-1 lg:flex-none"></div>
-      <BigButtonYellowShadow to="#booking-section" onClick={() => scrollTo(`#booking-section`)}>
+      <BigButtonYellowShadow to="#contact-section" onClick={() => scrollTo(`#contact-section`)}>
         CONTACT US
       </BigButtonYellowShadow>
     </Navbar>

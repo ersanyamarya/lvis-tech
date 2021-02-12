@@ -4,7 +4,7 @@ import { useServices } from '../../hooks'
 import colors from '../colors'
 
 const ServiceContainer = styled.div`
-  ${tw`py-16 lg:px-10 static`}
+  ${tw`py-16 md:px-10 lg:px-20 static`}
   background-color: ${colors.accentLight};
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='72' viewBox='0 0 36 72'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.4'%3E%3Cpath d='M2 6h12L8 18 2 6zm18 36h12l-6 12-6-12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 `
@@ -22,7 +22,7 @@ const Back = styled.div`
   transform: rotateY(180deg);
 `
 const Front = styled.div`
-  ${tw`absolute text-base w-full h-full flex flex-col  py-2 px-4 lg:p-8 m-0`}
+  ${tw`absolute text-base w-full h-full flex flex-col lg:p-8 m-0`}
   background-color: ${colors.base};
   color: ${colors.accent};
 
@@ -39,7 +39,7 @@ const Container = styled.div`
 `
 const Accord = styled.div`
   ${tw`w-full m-5 sm:mx-1 lg:w-1/4 rounded-lg bg-transparent cursor-pointer`}
-  height: 24rem;
+  height: 20rem;
 
   &.flipper > div {
     transform: rotateY(180deg);
@@ -91,12 +91,12 @@ export default function Services(): JSX.Element {
             >
               <Container>
                 <Front>
-                  <img tw="m-auto w-40 mt-8 mb-4" src={service.featuredImage.src} />
+                  <img tw="m-auto w-40 mt-8 mb-6" src={service.featuredImage.src} />
                   <Title>{service.title}</Title>
-                  <p tw="py-2 text-center">{service.description}</p>
+                  {/* <p tw="py-2 text-center">{service.description}</p> */}
                 </Front>
                 <Back>
-                  <Title>{service.title}</Title>
+                  {/* <Title>{service.title}</Title> */}
                   <p tw="py-2 text-center">{service.longDescription}</p>
                 </Back>
               </Container>

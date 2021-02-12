@@ -144,7 +144,7 @@ export default function Contacting(): JSX.Element {
   }
   return (
     <>
-      <div tw="pt-16" id="booking-section"></div>
+      <div tw="pt-16" id="contact-section"></div>
 
       <ContactForm className={state.status === 'PENDING' ? 'form-pending' : ''}>
         {state.status === 'ERROR' && (

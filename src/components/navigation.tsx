@@ -41,7 +41,7 @@ const NavigationView = styled.nav`
 `
 
 const ChildNav = styled.div`
-  ${tw`invisible m-0 p-0 sm:pb-10 sm:px-32 absolute top-20 left-0 flex flex-wrap justify-evenly
+  ${tw`invisible m-0 p-0 sm:pb-10 sm:px-32 absolute top-20 mt-2 left-0 flex flex-wrap justify-evenly
   shadow-lg`}
   background-color: ${colors.accentLight};
   overflow: auto;

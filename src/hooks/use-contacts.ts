@@ -11,6 +11,7 @@ export function useContacts(): any {
           address
           email
           phone
+          careerEmail
         }
       }
     }
@@ -22,6 +23,7 @@ export function useContacts(): any {
       address: node.address,
       email: node.email,
       phone: node.phone,
+      careerEmail: node.careerEmail,
     }
   })[0]
 }

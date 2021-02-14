@@ -6,7 +6,7 @@ import { Layout, Services, MissionVison, WhoAreWe, Contacting } from '../compone
 import colors from '../components/colors'
 import { useAsset } from '../hooks'
 import { BigButtonWhite, BigButtonYellow } from '../components/common'
-import { Sections } from '../components/home_page'
+import { Sections, WorkAtLvisTech } from '../components/home_page'
 
 const HeroImage = styled(Image)`
   ${tw` m-0 w-screen z-0 absolute`}
@@ -48,6 +48,7 @@ export default function Home(): JSX.Element {
       <WhoAreWe />
       {/* <Sections /> */}
       <Contacting />
+      <WorkAtLvisTech />
     </Layout>
     //   </div>
     //   <div tw="absolute h-screen w-screen z-50 bg-red-300">

@@ -4,6 +4,7 @@ import { useContacts } from './use-contacts'
 import { useAsset } from './use-asset'
 import { UseSiteMeata } from './use-site-meta'
 import { useSections } from './use-section'
+import { useExperience } from './use-experience'
 interface User {
   email: string
   facebook: string
@@ -87,5 +88,11 @@ interface File {
   id: string
   title: string
 }
-export { useServices, useAsset, useMissionVision, UseSiteMeata, useContacts, useSections }
-export type { Post, User, Service, StaticPage, Why, Faq, Physiotherapist, File, Testimonial }
+
+interface Experience {
+  body: string
+  id: string
+  title: string
+}
+export { useServices, useAsset, useMissionVision, UseSiteMeata, useContacts, useSections, useExperience }
+export type { Post, User, Service, StaticPage, Why, Faq, Physiotherapist, File, Testimonial, Experience }

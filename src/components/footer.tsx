@@ -16,7 +16,7 @@ export default function Footer(): JSX.Element {
   return (
     <FooterContainer>
       <h2 tw="text-center py-16">sales@lvistech.com</h2>
-      <div tw="flex py-5 flex-col lg:flex-row lg:justify-between">
+      <div tw="flex items-center py-5 flex-col lg:flex-row lg:justify-between">
         <a href="https://www.linkedin.com/company/lvistech/">
           <svg tw="mb-3 w-32" viewBox="0 0 512 128" version="1.1" preserveAspectRatio="xMidYMid">
             <g>

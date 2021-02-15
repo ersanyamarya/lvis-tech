@@ -58,8 +58,8 @@ export default function WorkAtLvisTech(): JSX.Element {
         <Mail>
           <span>Send your resumes to </span>
           <br />
-          <a href="mailto:experience@lvistech.com" tw="font-bold">
-            experience@lvistech.com
+          <a href="mailto: careers@lvistech.com" tw="font-bold">
+            careers@lvistech.com
           </a>
         </Mail>
       </WhoSection>

@@ -162,7 +162,8 @@ export default function Contacting(): JSX.Element {
             </h1>
 
             <p tw="flex pt-5 items-center">
-              <Image tw="w-12 h-12 mr-6" fluid={mailImage} />
+              {/* <Image tw="w-12 h-12 mr-6" fluid={mailImage} /> */}
+              <img tw="mr-6" src={mailImage.src} alt="mail image" />
               <span tw="m-0">
                 <strong>Business:</strong> <a href={`mailto:${contact.email}`}>{contact.email}</a>
                 <br />
@@ -171,11 +172,12 @@ export default function Contacting(): JSX.Element {
             </p>
 
             <p tw="flex pt-5 items-center">
-              <Image tw="w-12 h-12 mr-6" fluid={callImage} />
+              <img tw="mr-6" src={callImage.src} alt="call image" />
+
               <a href={`tel:${contact.phone}`}>{contact.phone}</a>
             </p>
             <p tw="flex pt-5 items-center">
-              <Image tw="w-16 h-12 mr-10" fluid={addressImage} />
+              <img tw="mr-6" src={addressImage.src} alt="address image" />
 
               <a
                 href="https://www.google.com/maps/place/Purva+Summit/@17.4532868,78.3684024,17z/data=!3m1!4b1!4m5!3m4!1s0x3bcb93c45446dfcf:0xe3c89d70db77622f!8m2!3d17.4532868!4d78.3705911"

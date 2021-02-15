@@ -5,7 +5,7 @@ import BackgroundImage from 'gatsby-background-image'
 import colors from '../colors'
 
 const WhoSection = styled.div`
-  ${tw`relative sm:pb-64`}
+  ${tw`relative sm:pb-64 mt-0`}
 `
 const Title = styled(BackgroundImage)`
   ${tw`p-20 text-center sm:pb-64 sm:mb-32`}
@@ -32,7 +32,7 @@ export default function WorkAtLvisTech(): JSX.Element {
 
   return (
     <>
-      <div tw="pt-16 pb-10" id="who-are-we-section"></div>
+      <div tw="pt-16 pb-10" id="experience-section"></div>
       <WhoSection>
         <Title fluid={careerImage}>
           <h1>Work at LvisTech</h1>

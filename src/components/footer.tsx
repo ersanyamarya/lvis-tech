@@ -15,7 +15,7 @@ const FooterContainer = styled.div`
 export default function Footer(): JSX.Element {
   return (
     <FooterContainer>
-      <h2 tw="text-center py-16">sales@LvisTech.com</h2>
+      <h2 tw="text-center py-16">sales@lvistech.com</h2>
       <div tw="flex py-5 flex-col lg:flex-row">
         <svg
           tw="m-auto mb-3"

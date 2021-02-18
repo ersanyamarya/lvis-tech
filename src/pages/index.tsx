@@ -8,8 +8,8 @@ import { useAsset } from '../hooks'
 import { BigButtonWhite, BigButtonYellow } from '../components/common'
 import { Sections, WorkAtLvisTech } from '../components/home_page'
 
-const HeroImage = styled(Image)`
-  ${tw` m-0 w-screen z-0 absolute`}
+const HeroImage = styled.img`
+  ${tw` m-0 w-screen z-0`}
   height:80vh;
 `
 
@@ -28,7 +28,11 @@ export default function Home(): JSX.Element {
     //   <div tw="absolute">
     <Layout>
       <div tw="relative">
-        <HeroImage fluid={heroImage.fluid} />
+        {/* <HeroImage fluid={heroImage.fluid} /> */}
+        <HeroImage
+          src="https://images.ctfassets.net/3379nviw0swj/3gyYfc3fRxWlKG6cfBaGsM/553abc51cd0ff4c1a4cde0a6e377c548/hero-image-2000.png"
+          alt="hero image"
+        />
         <HeroContent>
           <h1 tw="m-0 mt-10 sm:mt-10 mb-8 lg:mb-16 text-4xl lg:text-6xl font-bold">
             Transformation through Disruptive Technologies

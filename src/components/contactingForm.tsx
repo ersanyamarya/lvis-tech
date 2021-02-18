@@ -29,7 +29,7 @@ const loading = keyframes`
   }
 `
 const ContactForm = styled.div`
-  ${tw` p-8 lg:flex`}
+  ${tw` p-8 py-16 lg:flex`}
 
   background-color:${colors.baseDark};
   color: ${colors.accent};
@@ -161,9 +161,9 @@ export default function Contacting(): JSX.Element {
               Have an idea? <br /> Tell us about it!
             </h1>
 
-            <p tw="flex pt-5 items-center">
+            <p tw="flex pt-0 items-center">
               {/* <Image tw="w-12 h-12 mr-6" fluid={mailImage} /> */}
-              <img tw="mr-6" src={mailImage.src} alt="mail image" />
+              <img tw="mr-6 w-10" src={mailImage.src} alt="mail image" />
               <span tw="m-0">
                 <strong>Business:</strong> <a href={`mailto:${contact.email}`}>{contact.email}</a>
                 <br />
@@ -172,12 +172,12 @@ export default function Contacting(): JSX.Element {
             </p>
 
             <p tw="flex pt-5 items-center">
-              <img tw="mr-6" src={callImage.src} alt="call image" />
+              <img tw="mr-6 w-10" src={callImage.src} alt="call image" />
 
               <a href={`tel:${contact.phone}`}>{contact.phone}</a>
             </p>
             <p tw="flex pt-5 items-center">
-              <img tw="mr-6" src={addressImage.src} alt="address image" />
+              <img tw="mr-6 w-10" src={addressImage.src} alt="address image" />
 
               <a
                 href="https://www.google.com/maps/place/Purva+Summit/@17.4532868,78.3684024,17z/data=!3m1!4b1!4m5!3m4!1s0x3bcb93c45446dfcf:0xe3c89d70db77622f!8m2!3d17.4532868!4d78.3705911"

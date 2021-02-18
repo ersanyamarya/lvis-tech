@@ -7,7 +7,7 @@ export function useAsset(name = 'safer'): File {
     query {
       allContentfulAsset {
         nodes {
-          fluid {
+          fluid(quality: 100) {
             aspectRatio
             base64
             sizes

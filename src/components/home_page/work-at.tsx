@@ -7,8 +7,9 @@ import colors from '../colors'
 const WhoSection = styled.div`
   ${tw`relative sm:pb-64 mt-0`}
 `
-const Title = styled(BackgroundImage)`
+const Title = styled.div`
   ${tw`p-20 text-center sm:pb-64 sm:mb-32`}
+  background-image: url("https://images.ctfassets.net/3379nviw0swj/2mR91fWA7tZT0su1HtW32r/d714a950d35a9dd059ecf48c3a8bfeef/careers-image-1.jpg");
   & h1 {
     ${tw`font-bold text-4xl sm:text-6xl text-center
     sm:mt-20 `}
@@ -34,7 +35,7 @@ export default function WorkAtLvisTech(): JSX.Element {
     <>
       <div tw="pt-0 mt-0 pb-10" id="experience-section"></div>
       <WhoSection>
-        <Title fluid={careerImage}>
+        <Title>
           <h1>Work at LvisTech</h1>
         </Title>
 

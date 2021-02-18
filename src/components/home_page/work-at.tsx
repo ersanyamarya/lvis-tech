@@ -10,6 +10,9 @@ const WhoSection = styled.div`
 const Title = styled.div`
   ${tw`p-20 text-center sm:pb-64 sm:mb-32`}
   background-image: url("https://images.ctfassets.net/3379nviw0swj/2mR91fWA7tZT0su1HtW32r/d714a950d35a9dd059ecf48c3a8bfeef/careers-image-1.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
   & h1 {
     ${tw`font-bold text-4xl sm:text-6xl text-center
     sm:mt-20 `}

@@ -33,7 +33,7 @@ export default function WorkAtLvisTech(): JSX.Element {
 
   return (
     <>
-      <div tw="pt-0 mt-0 pb-10" id="experience-section"></div>
+      {/* <div tw="pt-0 mt-0 pb-10" id="experience-section"></div> */}
       <WhoSection>
         <Title>
           <h1>Work at LvisTech</h1>
